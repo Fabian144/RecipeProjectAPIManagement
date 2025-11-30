@@ -43,7 +43,7 @@ export default {
           `https://recipes.bocs.se/api/v1/${this.store.teamId}/recipes/${recipe.id}`,
           {
             method: 'PATCH',
-            body: JSON.stringify({ imageUrl: `${recipe.imageUrl}` }),
+            body: JSON.stringify({ imageUrl: `${recipe.newImageUrl}` }),
             headers: { 'Content-type': 'application/json' },
           }
         );
